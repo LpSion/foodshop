@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>login</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+   <a href="index.html" style="height: 35px; width: 35px; background-color: red; color: white; 
+   text-align: center; margin: 16px; font-size: medium; border: 2px solid black;" class="fas fa-times"></a>
+
+
+   <section class="form-container">
+
+      <div>
+         <h3>login now</h3>
+         <input type="email" id="email" placeholder="enter your email" class="box">
+         <input type="password" id="pass" placeholder="enter your password" class="box">
+         <input type="submit" onclick="login()" value="login now" class="btn" name="submit">
+         <p>don't have an account? <a href="register.html">register now</a></p>
+      </div>
+
+   </section>
+
+
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+   <script src="SystemFunctionMain.js"></script>
+   <script>
+      if(wait == false){
+         console.log('wait')
+         alert("anjai enda jadi")
+
+         firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+               window.location = "index.html"
+            } else {
+               // No user is signed in.
+            }
+         });
+      }
+      
+   </script>
+
+</body>
+
+</html>
