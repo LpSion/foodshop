@@ -110,7 +110,7 @@ function login() {
       // Signed in
       var user = userCredential.user;
       swal("Welcome Back!", "Success Login", "success").then((value) => {
-        window.location = "home.html"
+        window.location = "index.html"
       });
 
     })
@@ -164,7 +164,7 @@ function register() {
     database.ref().child('users/' + user.uid).set(data)
 
     swal("Welcome!", "Success Register", "success").then((value) => {
-      window.location = "home.html"
+      window.location = "index.html"
     });
   }).catch(function (error) {
     var errorM = error.message
