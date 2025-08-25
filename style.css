@@ -115,7 +115,7 @@ section{
 
 .btn:hover,
 .delete-btn:hover{
-   letter-spacing: .2rem;
+   /* letter-spacing: .2rem; */
 }
 
 .disabled{
@@ -829,9 +829,10 @@ section{
 }
 
 .user-details .user img{
-   width: 100%;
-   height: 20rem;
-   object-fit: contain;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 60px;
    margin-bottom: 1rem;
 }
 
@@ -1082,3 +1083,4 @@ section{
    }   
 
 }
+
