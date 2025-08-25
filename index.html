@@ -1,1 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+
+   <script src="scripts/index.js" defer type="module"></script>
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+   <header class="header">
+
+      <section class="flex">
+
+         <a href="index.html" class="logo">foodshop - LpSion</a>
+
+         <nav class="navbar">
+            <a href="index.html">home</a>
+            <a id="menuBtn" >menu</a>
+            <a id="ordersBtn" style="cursor: pointer;">orders</a>
+         </nav>
+
+         <div class="icons">
+            <a><i class="fas fa-search"></i></a>
+            <a id="cartBtn"><i class="fas fa-shopping-cart"></i><span>(
+                  0 )
+               </span></a>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+         </div>
+
+         <div class="profile">
+            <div id="loginprofile">
+
+            </div>
+
+            <!-- <a id="loginbtn" class="btn">login</a> or -->
+            <!-- <a id="registerbtn" class="btn">register</a> -->
+            <div id="infoprofile">
+
+            </div>
+         </div>
+
+      </section>
+
+   </header>
+
+
+   <section class="hero">
+
+      <div class="swiper hero-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <span>order online</span>
+                  <h3>AirSarbat</h3>
+                  <a id="seemenu"  class="btn">see menus</a>
+               </div>
+               <div class="image">
+                  <img src="images/home-img-1.png" alt="">
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <span>order online</span>
+                  <h3>Maggi Kari</h3>
+                  <a href="menu.html" class="btn">see menus</a>
+               </div>
+               <div class="image">
+                  <img src="images/home-img-2.png" alt="">
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <span>order online</span>
+                  <h3>Maggi Ayam</h3>
+                  <a href="menu.html" class="btn">see menus</a>
+               </div>
+               <div class="image">
+                  <img src="images/home-img-3.png" alt="">
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+   </section>
+
+   <!-- about section starts  -->
+
+   <!-- <section class="about">
+
+      <div class="row">
+
+         <div class="image">
+            <img src="images/about-img.svg" alt="">
+         </div>
+
+         <div class="content">
+            <h3>why choose us?</h3>
+            <p></p>
+            <a href="menu.html" class="btn">our menu</a>
+         </div>
+
+      </div>
+
+   </section> -->
+
+   <!-- about section ends -->
+
+   <section class="steps">
+
+      <h1 class="title">Langkah Mudah</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="images/step-1.png" alt="">
+            <h3>Pilih Pesanan</h3>
+            <p>Tempah sarbat kegemaran dan sesuaikan ikut selera anda.</p>
+         </div>
+
+         <div class="box">
+            <img src="images/step-2.png" alt="">
+            <h3>Penghantaran Percuma</h3>
+            <p>Penghantaran pantas terus ke lokasi anda. Pastikan anda melengkapkan profil terlebih dahulu dengan nama
+               penuh dan nombor blok untuk memudahkan penghantaran.</p>
+         </div>
+
+         <div class="box">
+            <img src="images/step-3.png" alt="">
+            <h3>Nikmati Makanan</h3>
+            <p>Nikmati kesegaran sarbat dan makanan pilihan anda dengan penuh kepuasan.</p>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- <section class="category">
+
+      <h1 class="title">food category</h1>
+
+      <div class="box-container">
+
+         <a class="box">
+            <img src="images/cat-1.png" alt="">
+            <h3>Food</h3>
+         </a>
+
+         <a class="box">
+            <img src="images/cat-3.png" alt="">
+            <h3>Drinks</h3>
+         </a>
+
+         <a class="box">
+            <img src="images/cat-4.png" alt="">
+            <h3>Desserts</h3>
+         </a>
+
+      </div>
+
+   </section> -->
+
+   <section class="products">
+
+      <h1 class="title">Menu Terkini</h1>
+
+      <div class="box-container">
+         <div class="box">
+            <input type="hidden" name="pid" value="">
+            <input type="hidden" name="name" value="">
+            <input type="hidden" name="price" value="">
+            <input type="hidden" name="image" value="">
+            <a id="zoomimg" class="fas fa-eye"></a>
+            <button id="addcart" type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
+            <img src="images/home-img-2.png" alt="">
+            <a href="" class="cat">
+               Mee Instant
+            </a>
+            <div class="name">
+               Maggi Kari
+            </div>
+            <div class="flex">
+               <div class="price"><span>$</span>
+                  6.00
+               </div>
+               <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
+            </div>
+         </div>
+
+      </div>
+
+      <div class="more-btn">
+         <a id="viewallBtn" class="btn">veiw all</a>
+      </div>
+
+   </section>
+
+   <!-- reviews section starts  -->
+
+   <!-- <section class="reviews">
+
+      <h1 class="title">customer's reivews</h1>
+
+      <div class="swiper reviews-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <img src="images/pic-1.png" alt="">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut
+                  earum nulla sint voluptatum labore nemo.</p>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <h3>john deo</h3>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/pic-2.png" alt="">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut
+                  earum nulla sint voluptatum labore nemo.</p>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <h3>john deo</h3>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/pic-3.png" alt="">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut
+                  earum nulla sint voluptatum labore nemo.</p>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <h3>john deo</h3>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/pic-4.png" alt="">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut
+                  earum nulla sint voluptatum labore nemo.</p>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <h3>john deo</h3>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/pic-5.png" alt="">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut
+                  earum nulla sint voluptatum labore nemo.</p>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <h3>john deo</h3>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/pic-6.png" alt="">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut
+                  earum nulla sint voluptatum labore nemo.</p>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <h3>john deo</h3>
+            </div>
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+   </section> -->
+
+   <!-- reviews section ends -->
+
+
+   <footer class="footer">
+
+      <!-- <section class="grid">
+
+         <div class="box">
+            <img src="images/email-icon.png" alt="">
+            <h3>our email</h3>
+            <a></a>
+            <a></a>
+         </div>
+
+         <div class="box">
+            <img src="images/clock-icon.png" alt="">
+            <h3>opening hours</h3>
+            <p></p>
+         </div>
+
+         <div class="box">
+            <img src="images/map-icon.png" alt="">
+            <h3>our address</h3>
+            <a href="#"></a>
+         </div>
+
+         <div class="box">
+            <img src="images/phone-icon.png" alt="">
+            <h3>our number</h3>
+            <a></a>
+            <a></a>
+         </div>
+
+      </section> -->
+
+      <div class="credit">&copy; copyright @ 2025 by <span>LpSion</span> | all rights reserved!</div>
+
+   </footer>
+
+   <div class="loader">
+      <img src="images/loader.gif" alt="">
+   </div>
+
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+   <!-- custom js file link  -->
+   <script src="scripts/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <script>
+
+      var swiper = new Swiper(".hero-slider", {
+         loop: true,
+         grabCursor: true,
+         effect: "flip",
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+      });
+
+   </script>
+
+</body>
+
+</html>
