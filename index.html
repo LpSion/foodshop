@@ -29,34 +29,33 @@
 
          <nav class="navbar">
             <a href="index.html">home</a>
-            <a id="menuBtn" >menu</a>
+            <a href="#product">menu</a>
             <a id="ordersBtn" style="cursor: pointer;">orders</a>
          </nav>
 
          <div class="icons">
             <a><i class="fas fa-search"></i></a>
-            <a id="cartBtn"><i class="fas fa-shopping-cart"></i><span>(
-                  0 )
-               </span></a>
+            <a id="cartBtn"><i class="fas fa-shopping-cart"></i><span id="cartValue">( 0 )</span></a>
             <div id="user-btn" class="fas fa-user"></div>
             <div id="menu-btn" class="fas fa-bars"></div>
          </div>
 
          <div class="profile">
-            <div id="loginprofile">
-
-            </div>
-
-            <!-- <a id="loginbtn" class="btn">login</a> or -->
-            <!-- <a id="registerbtn" class="btn">register</a> -->
-            <div id="infoprofile">
-
-            </div>
+            <div id="loginprofile"></div>
+            <div id="infoprofile"></div>
          </div>
 
       </section>
 
+      <div class="scrolling-text-container">
+         <span>Perhatian: </span>
+         <marquee>Laman ini hanya dikhususkan untuk warga ILPKK sahaja. Sebarang akses oleh pihak selain daripada itu
+            adalah tidak dibenarkan. Terima Kasih!</marquee>
+      </div>
+      
    </header>
+
+
 
 
    <section class="hero">
@@ -69,7 +68,7 @@
                <div class="content">
                   <span>order online</span>
                   <h3>AirSarbat</h3>
-                  <a id="seemenu"  class="btn">see menus</a>
+                  <a href="#product" class="btn">see menus</a>
                </div>
                <div class="image">
                   <img src="images/home-img-1.png" alt="">
@@ -80,7 +79,7 @@
                <div class="content">
                   <span>order online</span>
                   <h3>Maggi Kari</h3>
-                  <a href="menu.html" class="btn">see menus</a>
+                  <a href="#product" class="btn">see menus</a>
                </div>
                <div class="image">
                   <img src="images/home-img-2.png" alt="">
@@ -91,7 +90,7 @@
                <div class="content">
                   <span>order online</span>
                   <h3>Maggi Ayam</h3>
-                  <a href="menu.html" class="btn">see menus</a>
+                  <a href="#product" class="btn">see menus</a>
                </div>
                <div class="image">
                   <img src="images/home-img-3.png" alt="">
@@ -105,28 +104,6 @@
       </div>
 
    </section>
-
-   <!-- about section starts  -->
-
-   <!-- <section class="about">
-
-      <div class="row">
-
-         <div class="image">
-            <img src="images/about-img.svg" alt="">
-         </div>
-
-         <div class="content">
-            <h3>why choose us?</h3>
-            <p></p>
-            <a href="menu.html" class="btn">our menu</a>
-         </div>
-
-      </div>
-
-   </section> -->
-
-   <!-- about section ends -->
 
    <section class="steps">
 
@@ -157,202 +134,15 @@
 
    </section>
 
-   <!-- <section class="category">
-
-      <h1 class="title">food category</h1>
-
-      <div class="box-container">
-
-         <a class="box">
-            <img src="images/cat-1.png" alt="">
-            <h3>Food</h3>
-         </a>
-
-         <a class="box">
-            <img src="images/cat-3.png" alt="">
-            <h3>Drinks</h3>
-         </a>
-
-         <a class="box">
-            <img src="images/cat-4.png" alt="">
-            <h3>Desserts</h3>
-         </a>
-
-      </div>
-
-   </section> -->
-
-   <section class="products">
+   <section id="product" class="products">
 
       <h1 class="title">Menu Terkini</h1>
 
-      <div class="box-container">
-         <div class="box">
-            <input type="hidden" name="pid" value="">
-            <input type="hidden" name="name" value="">
-            <input type="hidden" name="price" value="">
-            <input type="hidden" name="image" value="">
-            <a id="zoomimg" class="fas fa-eye"></a>
-            <button id="addcart" type="submit" class="fas fa-shopping-cart" name="add_to_cart"></button>
-            <img src="images/home-img-2.png" alt="">
-            <a href="" class="cat">
-               Mee Instant
-            </a>
-            <div class="name">
-               Maggi Kari
-            </div>
-            <div class="flex">
-               <div class="price"><span>$</span>
-                  6.00
-               </div>
-               <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
-            </div>
-         </div>
-
-      </div>
-
-      <div class="more-btn">
-         <a id="viewallBtn" class="btn">veiw all</a>
-      </div>
+      <div id="productbox-container" class="box-container"></div>
 
    </section>
 
-   <!-- reviews section starts  -->
-
-   <!-- <section class="reviews">
-
-      <h1 class="title">customer's reivews</h1>
-
-      <div class="swiper reviews-slider">
-
-         <div class="swiper-wrapper">
-
-            <div class="swiper-slide slide">
-               <img src="images/pic-1.png" alt="">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut
-                  earum nulla sint voluptatum labore nemo.</p>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
-               <h3>john deo</h3>
-            </div>
-
-            <div class="swiper-slide slide">
-               <img src="images/pic-2.png" alt="">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut
-                  earum nulla sint voluptatum labore nemo.</p>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
-               <h3>john deo</h3>
-            </div>
-
-            <div class="swiper-slide slide">
-               <img src="images/pic-3.png" alt="">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut
-                  earum nulla sint voluptatum labore nemo.</p>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
-               <h3>john deo</h3>
-            </div>
-
-            <div class="swiper-slide slide">
-               <img src="images/pic-4.png" alt="">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut
-                  earum nulla sint voluptatum labore nemo.</p>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
-               <h3>john deo</h3>
-            </div>
-
-            <div class="swiper-slide slide">
-               <img src="images/pic-5.png" alt="">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut
-                  earum nulla sint voluptatum labore nemo.</p>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
-               <h3>john deo</h3>
-            </div>
-
-            <div class="swiper-slide slide">
-               <img src="images/pic-6.png" alt="">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut
-                  earum nulla sint voluptatum labore nemo.</p>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
-               <h3>john deo</h3>
-            </div>
-
-         </div>
-
-         <div class="swiper-pagination"></div>
-
-      </div>
-
-   </section> -->
-
-   <!-- reviews section ends -->
-
-
    <footer class="footer">
-
-      <!-- <section class="grid">
-
-         <div class="box">
-            <img src="images/email-icon.png" alt="">
-            <h3>our email</h3>
-            <a></a>
-            <a></a>
-         </div>
-
-         <div class="box">
-            <img src="images/clock-icon.png" alt="">
-            <h3>opening hours</h3>
-            <p></p>
-         </div>
-
-         <div class="box">
-            <img src="images/map-icon.png" alt="">
-            <h3>our address</h3>
-            <a href="#"></a>
-         </div>
-
-         <div class="box">
-            <img src="images/phone-icon.png" alt="">
-            <h3>our number</h3>
-            <a></a>
-            <a></a>
-         </div>
-
-      </section> -->
 
       <div class="credit">&copy; copyright @ 2025 by <span>LpSion</span> | all rights reserved!</div>
 
